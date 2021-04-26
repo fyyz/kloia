@@ -15,9 +15,9 @@ public class AddProductToFav {
 
     @Then("user Navigate to Perfume & Deodorant under the Cosmetic & Personal Care tab.")
     public void user_Navigate_to_Perfume_Deodorant_under_the_Cosmetic_Personal_Care_tab() {
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
         homePage.kısıselBtn.click();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
         homePage.parfumBtn.click();
     }
 
@@ -31,15 +31,15 @@ public class AddProductToFav {
 
     @Then("Select Lacoste")
     public void select_Lacoste() {
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
         productPage.lacosteSelectionBox.click();
     }
 
     @Then("Click 7th product on the search result page")
     public void click_7th_product_on_the_search_result_page() {
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
         productPage.getProduct7().click();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
         product7NameExpected = productPage.product7Name.getText();
 
     }
@@ -65,7 +65,7 @@ public class AddProductToFav {
 
     @Then("Verify the product title is the same as with the product details page")
     public void verify_the_product_title_is_the_same_as_with_the_product_details_page() {
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(5);
         System.out.println("product7NameExpected = " + product7NameExpected);
 
         String actualResult = productPage.addedProduct.getText();

@@ -19,7 +19,7 @@ public class HomePage extends BasePage {
     @FindBy(css = "li.mainCat:nth-of-type(1)>a")
     public WebElement parfumBtn;
 
-    @FindBy(xpath = "//*[@id='contentListing']/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[1]")
+    @FindBy(xpath = "//*[@id=\"contentListing\"]/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[1]")
     public WebElement brandsBtn;
 
     @FindBy(css = "a[title='Hesabım'][class='menuLink user']")
