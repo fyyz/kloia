@@ -30,7 +30,7 @@ public class ProductPage extends BasePage {
     @FindBy(css=".btn.btnBlack.confirm")
     public WebElement submitBtn;
 
-    @FindBy(css="h3.productName")
+    @FindBy(xpath="//*[@id='p-372263092']/div[1]/a/h3")
     public WebElement addedProduct;
 
     @FindBy(css = "div[class*='filter-items dropdown shown']")
@@ -42,7 +42,7 @@ public class ProductPage extends BasePage {
     @FindBy(xpath="//*[@id='header']/div/div/div[2]/div[2]/div[3]/a")
     public WebElement navigateToMyFavourite;
 
-    @FindBy(css="a[href='//www.n11.com/hesabim/istek-listelerim']")
+    @FindBy(xpath="//*[@id=\"myAccount\"]/div[3]/ul/li[1]/div/ul/li[3]/span")
     public WebElement myFavouritesBtn;
 
     @FindBy(xpath="//*[@id='contentProDetail']/div[2]/section/div[3]/div[3]/div[2]/a")

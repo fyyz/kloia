@@ -13,6 +13,7 @@ public class AddProductToFav {
     ProductPage productPage = new ProductPage();
     String product7NameExpected = "";
 
+
     @Then("user Navigate to Perfume & Deodorant under the Cosmetic & Personal Care tab.")
     public void user_Navigate_to_Perfume_Deodorant_under_the_Cosmetic_Personal_Care_tab() {
         BrowserUtils.waitFor(3);
@@ -58,7 +59,7 @@ public class AddProductToFav {
     public void navigate_to_Favorites() {
         BrowserUtils.waitFor(5);
         productPage.navigateToMyFavourite.click();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(7);
         productPage.myFavouritesBtn.click();
 
     }
@@ -67,6 +68,8 @@ public class AddProductToFav {
     public void verify_the_product_title_is_the_same_as_with_the_product_details_page() {
         BrowserUtils.waitFor(5);
         System.out.println("product7NameExpected = " + product7NameExpected);
+
+        BrowserUtils.waitFor(5);
 
         String actualResult = productPage.addedProduct.getText();
         System.out.println("actualResult = " + actualResult);
