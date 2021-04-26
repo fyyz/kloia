@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ProductPage extends BasePage {
 
-
+//locators
     @FindBy(css = "label[for='m-Lacoste']")
     public WebElement lacosteSelectionBox;
 
