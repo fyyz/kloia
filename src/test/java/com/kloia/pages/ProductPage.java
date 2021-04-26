@@ -42,7 +42,10 @@ public class ProductPage extends BasePage {
     @FindBy(xpath="//*[@id='header']/div/div/div[2]/div[2]/div[3]/a")
     public WebElement navigateToMyFavourite;
 
-    @FindBy(xpath="//*[@id=\"myAccount\"]/div[3]/ul/li[1]/div/ul/li[3]/span")
+    @FindBy(xpath="//*[@id='myAccount']/div[3]/ul/li[1]/div/a/h4")
+    public WebElement myFavourite;
+
+    @FindBy(xpath="//*[@id='myAccount']/div[3]/ul/li[1]/div/ul/li[3]/span")
     public WebElement myFavouritesBtn;
 
     @FindBy(xpath="//*[@id='contentProDetail']/div[2]/section/div[3]/div[3]/div[2]/a")

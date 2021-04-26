@@ -61,15 +61,16 @@ public class AddProductToFav {
         productPage.navigateToMyFavourite.click();
         BrowserUtils.waitFor(7);
         productPage.myFavouritesBtn.click();
+        BrowserUtils.waitFor(5);
+        productPage.myFavourite.click();
+        BrowserUtils.waitFor(5);
 
     }
 
     @Then("Verify the product title is the same as with the product details page")
     public void verify_the_product_title_is_the_same_as_with_the_product_details_page() {
-        BrowserUtils.waitFor(5);
-        System.out.println("product7NameExpected = " + product7NameExpected);
 
-        BrowserUtils.waitFor(5);
+//        System.out.println("product7NameExpected = " + product7NameExpected);
 
         String actualResult = productPage.addedProduct.getText();
         System.out.println("actualResult = " + actualResult);
